@@ -20,7 +20,7 @@ export default function Greetings(){
 }
 const styles = StyleSheet.create({
     greet: {
-        marginTop:50,
+        marginTop:80,
         marginHorizontal:25,
         fontSize:26,
         color:'#356899',
@@ -40,7 +40,8 @@ const styles = StyleSheet.create({
         fontSize:14,
         fontWeight:'400',
         marginTop:10,
-        color:'#bfbfbf'
+        color:'#bfbfbf',
+        marginBottom:90
     }
     
 })
