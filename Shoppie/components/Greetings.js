@@ -6,8 +6,14 @@ export default function Greetings(){
         <View >
             <Text style={styles.greet}>Jobizz</Text>
         </View>
+        <View style={styles.welcome}>
+            <Text style={styles.welcomeContainer} >Welcome Back &#128075;
+                
+            </Text>
+            <Text style={styles.log}> Let's log in. Apply to jobs!</Text>
+
+        </View>
         <View>
-            <Image style={styles.welcome} source={require('../assets/Welcome.png')}></Image>
         </View>
         </SafeAreaView>
     );
@@ -15,13 +21,26 @@ export default function Greetings(){
 const styles = StyleSheet.create({
     greet: {
         marginTop:50,
-        marginBottom:10,
-        marginHorizontal:30,
+        marginHorizontal:25,
         fontSize:26,
         color:'#356899',
         fontWeight:'600'
     },
     welcome:{
-        marginHorizontal:30
+       marginHorizontal:25,
+       marginVertical:10
+    },
+    welcomeContainer:{
+        fontSize:24,
+       fontFamily:'Poppins',
+       fontWeight:'600',
+       color:'#00004d'
+    },
+    log:{
+        fontSize:14,
+        fontWeight:'400',
+        marginTop:10,
+        color:'#bfbfbf'
     }
+    
 })
