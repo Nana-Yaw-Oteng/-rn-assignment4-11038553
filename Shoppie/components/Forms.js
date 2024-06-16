@@ -1,14 +1,33 @@
 import { TextInput,TouchableOpacity,Text,View,StyleSheet} from "react-native";
 
-export default function(){
+export default function({name,setName,email,setEmail,onLogin}){
     return(
         <View>
-            <TextInput style={styles.ifield} placeholder="Name"></TextInput>
+            <TextInput style={styles.ifield}
+             placeholder="Name"
+             autoCapitalize='words'
+             autoCorrect={false}
+             value = {name}
+             onChangeText = {setName}
+        >
+
+        </TextInput>
             <View>
-                <TextInput style={styles.ifield} placeholder="Email"></TextInput>
+                <TextInput style={styles.ifield}
+                 placeholder="Email"
+                 keyboardType='email-address'
+                 autoComplete='email'
+                 autoCorrect={false}
+                 autoCapitalize={false}
+                 value={email}
+                 onChangeText={setEmail}
+                 >
+
+                 </TextInput>
             </View>
+
             <View>
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity style={styles.button} onPress={onLogin}>
                     <Text style={styles.log}>Login</Text>
                 </TouchableOpacity>
             </View>
