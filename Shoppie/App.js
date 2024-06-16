@@ -1,15 +1,18 @@
-import {  Text, View,Button } from 'react-native';
-import { useState } from 'react';
-import Greetings from './components/Greetings';
-import Forms from './components/Forms';
+import HomeScreen from './components/HomeScreen';
+import Home from './components/Home';
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
 
 export default function App() {
-const [name,setName] = useState(" ");
-const[email,setEmail] = useState(" ");
   return (
-    <View>
-     <Greetings/>
-     <Forms/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen options={{headerShown:false}} name="Home" component={HomeScreen} />
+        <Stack.Screen options={{headerShown:false}} name="Content" component={Home} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
