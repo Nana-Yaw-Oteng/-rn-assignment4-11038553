@@ -1,5 +1,5 @@
 import { TextInput,TouchableOpacity,Text,View,StyleSheet} from "react-native";
-
+import Footer from "./Footer";
 export default function({name,setName,email,setEmail,onLogin}){
     return(
         <View>
@@ -12,7 +12,7 @@ export default function({name,setName,email,setEmail,onLogin}){
         >
 
         </TextInput>
-            <View>
+            
                 <TextInput style={styles.ifield}
                  placeholder="Email"
                  keyboardType='email-address'
@@ -24,14 +24,18 @@ export default function({name,setName,email,setEmail,onLogin}){
                  >
 
                  </TextInput>
-            </View>
+            
 
             <View>
                 <TouchableOpacity style={styles.button} onPress={onLogin}>
                     <Text style={styles.log}>Login</Text>
                 </TouchableOpacity>
             </View>
+            <Footer/>
+           
+          
             </View>
+            
     
         
     );
@@ -61,4 +65,5 @@ const styles = StyleSheet.create({
     padding:13,
     color:'#fff'
    }
+   
 })
