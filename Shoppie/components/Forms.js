@@ -1,5 +1,6 @@
 import { TextInput,TouchableOpacity,Text,View,StyleSheet} from "react-native";
-import Footer from "./Footer";
+
+
 export default function({name,setName,email,setEmail,onLogin}){
     return(
         <View>
@@ -31,7 +32,6 @@ export default function({name,setName,email,setEmail,onLogin}){
                     <Text style={styles.log}>Login</Text>
                 </TouchableOpacity>
             </View>
-            <Footer/>
            
           
             </View>
@@ -64,6 +64,14 @@ const styles = StyleSheet.create({
     fontSize:20,
     padding:13,
     color:'#fff'
-   }
+   },
+   foot:{
+    marginVertical:70
+
+   },
+   bord:{
+   color:'#bfbfbf',
+   textAlign:'center'
    
+   }
 })
