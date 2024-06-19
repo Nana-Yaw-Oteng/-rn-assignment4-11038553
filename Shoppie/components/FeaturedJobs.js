@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome'; // Ensure you have this import
+
 
 export default function FeaturedJobs({ jobTitle,companyName,backgroundColor, amount, location, icon }) {
     return (
