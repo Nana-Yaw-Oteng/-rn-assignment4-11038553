@@ -40,3 +40,5 @@ and then
  Run `npm install` followed by the name of the dependency to install any dependency.
  # Starting the application
  Run `npm start` to start the app.
+ # Contributing
+ Contributions are welcome! Please open an issue or submit a pull request for any bug fixes or enhancements.
